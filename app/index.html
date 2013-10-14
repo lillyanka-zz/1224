@@ -13,11 +13,22 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+        <link rel="stylesheet" href="styles/cloudzoom.css">
+        <link rel="stylesheet" href="styles/lightbox.css">
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=206904392684400";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -25,40 +36,119 @@
 
         <div class="container">
             <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">1224</h3>
+                <a href="mailto:inquiry@postertext.com" class="inquiry pull-right">24/7 Support - inquiry@postertext.com</a>
+                <h1 class="logo">Postertext</h1>
             </div>
 
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+            <div class="row jumbotron">
+              <div class="pull-left">
+                <h2>Hang your favorite book on the wall</h2>
+                <h3>This <span class="highlight">Moby Dick</span> poster is made entirely out of text from the book.</h3>
+                <h3>No lines. No shading. <span class="highlight">All words.</span></h3>
+                <a href="https://postertext.com/cart" class="orange-btn">Buy now<span class="arrow"></span></a>
+                <p>Hurry - Free shipping ends in 24 hours.</p>
+              </div>
+              <a href="images/top-product-photo.png" class="pull-right top-product-photo" data-lightbox="top-product-photo" data-cloudzoom="useZoom: '.lb-container', image: 'images/top-product-photo.png', zoomImage: 'images/top-product-photo.png'"><img src="images/top-product-photo.png"  alt="" /><span class="view-larger"></span></a>
             </div>
 
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
-
-                    <h4>RequireJS</h4>
-                    <p>RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node.</p>
-
+            <div class="row framed-print">
+                <div class="col-lg-10">
+                  <h3>Finally, an art print for fans of Herman Melville’s</h3>
+                  <h2>Moby Dick</h2>
+                  <img src="images/framed-img.png" />
                 </div>
             </div>
 
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
+            <div class="row" id="legibletext">
+              <a href="javascript:" class="actual-text"><img src="images/actual-text.png"><span class="view-larger"></span></a>
+              <div class="text pull-right">
+                <h4>Legible Text</h4>
+                <p>Text size is perfectly legible for someone with average eyesight.</p>
+                <p>If you can read the ingredients list on product packagings, then you can read our text.</p>
+                <a href="" class="click-here"><span class="orange-arrow"></span>Click here to see a close-up picture<span class="orange-arrow"></span></a>
+              </div>
+            </div>
+
+            <div class="row" id="entire-novel">
+              <div id="icons" class="pull-left">
+                <img src="images/entire-novel.png" />
+              </div>
+              <div class="text pull-right">
+                <h4>The Entire Novel</h4>
+                <p>Words from the entire novel is used to create this stunning and elegant print.</p>
+              </div>
+            </div>
+
+            <div class="row" id="more">
+              <div class="furthermore pull-left">
+                <h4>Furthermore</h4>
+                <ul>
+                  <li>Museum quality paper</li>
+                  <li>Archival ink</li>
+                  <li>Ships worldwide</li>
+                  <li>Money-back guarantee</li>
+                  <li>Fast &amp; easy returns</li>
+                </ul>
+              </div>
+              <div class="true pull-right">
+                <h4>True to the novel</h4>
+                <p>In keeping with the depiction of Flatland given in Abbott's novella, this design uses text from the book to delineate a simple pentagon - the shape that most Flatlanders call home.</p>
+              </div>
+            </div>
+
+            <div class="row" id="featured">
+              <h4>Featured In</h4>
+              <div class="logos">
+                <p><img src="images/gq.png" alt="GQ"><img src="images/wired.png" alt="Wired"><img src="images/fab.png" alt="Fab"></p>
+                <p><img src="images/io9.png" alt="io9"><img src="images/dwell.png" alt="Dwell"><img src="images/amazon.png" alt="Amazon"></p>
+                <p><img src="images/galleycat.png" alt="Galleycat"><img src="images/uncrate.png" alt="Uncrate"></p>
+                <p><img src="images/newyork.png" alt="New York"><img src="images/notcot.png" alt="Notcot"><img src="images/harvard.png" alt="Harvard"></p>
+              </div>
+            </div>
+
+            <div class="row" id="buynow">
+              <a href="https://postertext.com/cart" class="orange-btn">Buy now<span class="arrow"></span></a>
+              <p>Hurry - Free shipping ends in 24 hours.</p>
+            </div>
+
+            <div class="row" id="data">
+              <p>Your data is safe with us. We are protected by the best in the industry.</p>
+              <div class="icons">
+                <img src="images/cards.png" alt="Credit Cards">
+                <a href="" class="norton"><img src="images/norton.png" alt="Norton Security" /></a>
+              </div>
+            </div>
+            
+            <div class="row" id="bottom">
+              <div class="about pull-left">
+                <h4>ABOUT OUR COMPANY</h4>
+                <div class="fb-like" data-href="https://www.facebook.com/Postertext" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+                <div class="text">
+                  <p>Postertext started out as a gift idea for a well-read friend. Our company became the online store you see today on July 7, 2010 and have been in business ever since.</p>
+                  <p>Our team of talented artists are avid readers from all over the world with the common goal of capturing the greatest works of literature in illustrative form.</p>
+                  <p>We hope you enjoy our art prints as much as we enjoy making them!</p>
+                  <div class="guarantee"><img src="images/guarantee.png" alt=""></div>
+                </div>
+              </div>
+              <div class="footer">
+                <nav class="bottom">
+                  <a href="http://postertext.com/">Shop</a>
+                  <a href="http://postertext.com/about">About</a>
+                  <a href="http://postertext.com/faq">Faq</a>
+                  <a href="http://postertext.com/book-request">Request a book</a>
+                  <a href="http://postertext.com/returns-and-exchanges">Returns &amp; Exchanges</a>
+                  <a href="http://postertext.com/policy-and-terms">Policy &amp; Terms</a>
+                  <a href="http://postertext.com/blog">Blog</a>
+                  <a href="http://postertext.com/write-to-us">Contact</a>
+                </nav>
+                <p class="copyright">&copy; Postertext 2012. All rights reserved.</p>
+                <nav class="social">
+                  <a href="http://facebook.com/postertext" class="fb">Facebook</a>
+                  <a href="http://twitter.com/postertext" class="tw">Twitter</a>
+                  <a href="http://pinterest.com/postertext" class="pin">Pinterest</a>
+                </nav>
+                
+              </div>
             </div>
 
         </div>
@@ -69,7 +159,8 @@
         <script src="bower_components/jquery/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
-
+        <script src="scripts/cloudzoom.js"></script>
+        <script src="scripts/lightbox-2.6.min.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
