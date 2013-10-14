@@ -351,7 +351,7 @@ span.highlight{
         display: block;
         margin-bottom: 12px;
         &:before{
-          content: '■';
+          content: '\25A0';
           color: #D04F2D;
           font-size: 27px;
           float: left;
@@ -424,7 +424,7 @@ span.highlight{
 }
 
 #bottom{
-  padding: 0 0 0 118px;
+  padding: 0 0 37px 118px;
   background: url(../images/books.png) no-repeat 90% 100%;
   margin-top: 69px;
   .about{
@@ -459,7 +459,7 @@ span.highlight{
   border: none;
   float: left;
   margin-left: -74px;
-  margin-top: 71px;
+  margin-top: 52px;
   nav.bottom{
     a{
       font-size: 12px;

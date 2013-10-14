@@ -60,3 +60,19 @@ require(['app', 'jquery'], function (app, $) {
     console.log(app);
     console.log('Running jQuery %s', $().jquery);
 });
+
+$(function(){
+  CloudZoom.quickStart();
+  $("a.gallery").fancybox({
+    'afterShow' : function(){
+      $('.fancybox-inner img.fancybox-img').wrap(
+        $('<a>')
+         .attr('href', this.href) // this.href gets the "href" of the current image
+         .addClass('cloudzoom pull-right top-product-photo')
+         .attr('rel', "position: 'inside'")
+        ); // wrap
+      // $('.cloudzoom').CloudZoom();
+    } // onComplete
+  });
+});
+  
